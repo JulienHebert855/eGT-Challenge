@@ -1,0 +1,203 @@
+header {
+    position: relative;
+    background-color : black;
+    height: 100%;
+    min-height: 35rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform : translateX(-50%) translateY(-50%);
+    -webkit-transform : translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color : red;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+nav {
+    background-color: #4e555b;
+  }
+
+.footer {
+    background-color: gray;
+}
+
+footer {
+    background-color: gainsboro;
+  }
+
+.zoom:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.bronze{
+    background-color: darkorange;
+}
+
+.am{
+    background-color: red;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+    color:white;
+}
+
+@font-face {
+    font-family: "Concielian Bold";
+    src: url(../font/concielianboldital.ttf);
+}
+
+h1, h2, h3, h5{
+    font-family: "Concielian Bold";
+}
+
+@font-face {
+    font-family: "P";
+    src: url(../font/Prime-Regular.ttf);
+}
+
+p{
+    font-family: "P";
+}
+
+#classespilote{
+    background-color: black;
+    color:white;
+}
+
+#inscription1{
+    background-color: gray;
+}
+
+#inscription2{
+    background-color: red;
+    height: 5rem;
+}
+
+#backgroundinscription {
+    background-image: url("../img/photos/AC2\ \ \ 2020-02-03\ 22_42_07.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 47.3rem;
+  }
+
+ .jumbotroninscription {
+    align-items: center;
+    justify-content: center;
+    height: 71vh;
+    opacity: 90%;
+  }
+
+@media screen and (max-width: 576px) {
+    .display-4{
+        font-size: 2rem;
+    }
+    .h1{
+        font-size: 1.5rem;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .display-4{
+        font-size: 2rem;
+    }
+    .h1{
+        font-size: 1.5rem;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .display-4{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+  }
+  
+  .img-hover-zoom img {
+    transition: transform 0.5s ease;
+  }
+  
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+  
+  .img-hover-zoom--colorize img {
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+    filter: grayscale(85%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+
+.banniere {
+    background-image: url("../img/Porsche_Canada/Voitures/Cayman_GT4/Porsche_Cayman_GT4_3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50rem;
+  }
+
+#diffusion {
+    background-color: red;
+    height: 5rem;
+  }

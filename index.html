@@ -1,0 +1,1103 @@
+<!-- Par Julien Hebert 13 fevrier 2020 -->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175922394-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175922394-1');
+    </script>
+
+    <script>
+        // Register service worker.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="eGT Challenge App">
+    <meta name="theme-color" content="#2F3BA2" />
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="eGT Challenge PWA">
+
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+
+    <title>eGT Challenge</title>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbar">
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-xl navbar-dark p-l-15 pr-0 mx-0">
+        <a class="navbar-brand" href="index.html"><img src="img/logo_egt3.png" class="img-fluid px-1 py-1" width="200px" alt="egt3logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse sticky-top" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+            <li class="nav-item"><a class="nav-link" href="equipe.html">Équipe</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarresultats" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Résultats
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Résultats">
+                    <a class="dropdown-item" href="egt4sprint.html">eGT4 Sprint 2020 - Saison 2</a>
+                    <a class="dropdown-item" href="egt3challenge.html">eGT3 Challenge 2020 - Saison 2</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://forms.gle/bJBoJrkCn8UyKKRVA" target="_blank">Rapport d'incident</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarmedia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Médias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://jeuxvideo.rds.ca/une-ligue-quebecoise-de-sim-racing-sur-assetto-corsa-competizione/" target="_blank">RDS Jeux-Vidéos</a>
+                    <a class="dropdown-item" href="https://www.poleposition.ca/actualite/2020/04/02/acc-quebec-une-serie-virtuelle-avec-un-prix-bien-reel-en-fin-de-saison/" target="_blank">Pole-Position Magazine</a>
+                    <a class="dropdown-item" href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yNjE0ZTllMC9wb2RjYXN0L3Jzcw/episode/ZGIzMmYxZjAtYTExMi00MDlkLTk3ZjktZWEwZmFlNGE3NGU1?sa=X&ved=2ahUKEwjF48f87bfrAhVDnnIEHcUtCt4QkfYCegQIARAF" target="_blank">Balado SFTV Ép.6 - Google Podcast</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/2584667424939968/videos/295922328444478" target="_blank">Balado SFTV Ép.6 - Facebook</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarresourcesexternes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ressources externes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/competizione" target="_blank">Site Web ACC</a>
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/forum/index.php#assetto-corsa-competizione.60" target="_blank">Forums ACC</a>
+                    <a class="dropdown-item" href="https://sro-esport.com/" target="_blank">SRO E-Sports</a>
+                </div>
+            </li>
+            </ul>
+
+            <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
+            <span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/channel/UCRlbt6ul3iydP1Z8qAkuDpw?" target="_blank"><i class="fab fa-youtube"></i></a></span>
+            <span class="navbar-brand"><a class="nav-link" href="https://discord.gg/DMhH7Hq" target="_blank"><i class="fab fa-discord"></i></a></span>
+        </div>
+    </nav>
+</section>
+
+<header>
+<!-- Video Background Header -->
+<section id="headervideo">
+
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://i.imgur.com/GQeAoOR.mp4"
+                type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-12 text-white pt-5 mt-5">
+                <h1 class="display-4 mt-3 pt-3">eGT Challenge</h1>
+                <p class="lead pt-3">Le championnat Canadien de courses virtuelles mettant en vedette les très populaires voitures GT3 et GT4. Voyez ce que les pilotes aiment de notre série :</p>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h4>"Le fair-play entre chacun des pilotes"</h4>
+                        <p>-D. Van Daele</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Professionalisme, entraide, compétitivité."</h4>
+                        <p>-A. Leon</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Le plaisir entre les pilotes et des course propres"</h4>
+                        <P>-G. Lafrenaye</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Les pilotes roulent très clean, le partage sur le discord est plus qu'apprécié aussi."</h4>
+                        <P>-J.-P. Paré</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Professionnalisme (pointage, site web, Discord, diffusion etc)."</h4>
+                        <P>-P.-O. Cloutier</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"La transparence et la flexibilité des organisateurs, l'ajout de l'équipe du SFTV pour la diffusion, la niveau des pilotes."</h4>
+                        <P>-E. Carpentier</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Les réglements sont bien défini et bien appliqué, les informations bien communiquer, bonne visibilité de la ligue."</h4>
+                        <P>-J. Boivin</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Bonne participation aux courses / série pour tout les niveaux / camaraderie entre les pilotes / plateformes ACC qui est le meilleur simulateur selon moi."</h4>
+                        <P>-J.-F. Bilodeau</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Les pilotes cherchent à s'améliorer constamment. Il y a une excellente entraide entres les pilotes."</h4>
+                        <P>-S.-J. Laurin</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"La grande majorité des pilotes interagissent entre eux, s'entraident et il y a beaucoup de respect mutuel, ce qui donne des courses très propres. On a aussi des pilotes de tous les niveaux et c'est intéressant de voir la progression de certains et les batailles au classement dans les différentes classes."</h4>
+                        <P>-D. Bélanger</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Avoir ouvert la porte aux gens de tous niveaux rend le groupe de coureure plus plaisant et le système de coaching pour que les pro aident les amateurs sont trois choses qui m'ont attiré dans cette série."</h4>
+                        <P>-P.-L. Maillé</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Le Discord est très facile à utiliser et favorise les échanges entre les compétiteurs. Il permet un excellent encadrement pour les nouveaux pilotes."</h4>
+                        <P>-T. Lavoie</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Le niveau de compétition, la possibilité d'évoluer et l’assiduité des courses!"</h4>
+                        <P>-C. Baillargeon</P>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>"Le niveau élevé du talent des pilotes, le respect entre pilote, l’entraide, la maturité des pilotes, bref j’adore les membres de cette ligue. Continuer le travail admirable que vous faites. Je suis vraiment content de faire partie de cette ligue. J’ai découvert une nouvelle façons de profiter de ma passion pour la course automobile et j’adore ça!"</h4>
+                        <P>-S. Berger</P>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+</header>
+
+<!--Championnats------------------------------------------------------------------------------------------------------------- -->
+<section id="championnats">
+    <div class="container-fluid px-1 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center justify-content-md-center justify-content-sm-center pt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1>Les séries</h1>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pt-5">
+            <button type="button" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#modalcalaccqc">Calendrier Général</button>
+            <div class="modal fade" id="modalcalaccqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Calendrier Général</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <h1 class="py-5">Calendrier eGT4 Sprint Saison 2 - 2020</h1>
+                            <table class="table table-hover table-sm">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Durée</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Circuit</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                            <tr>
+                                 <td class="table-success">Pratique officielle</td>
+                                 <td class="table-success">Vendredi 28 août</td>
+                                 <td class="table-success">Kyalami</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 4 septembre</td>
+                                <td class="table-warning">Kyalami</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 11 septembre</td>
+                                <td class="table-success">Misano</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 18 septembre</td>
+                                <td class="table-warning">Misano</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 25 septembre</td>
+                                <td class="table-success">Zolder</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 2 octobre</td>
+                                <td class="table-warning">Zolder</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 9 octobre</td>
+                                <td class="table-success">Barcelona</td>
+                            </tr>
+                            <tr>
+                                <td class="table-danger">Endurance 120 minutes</td>
+                                <td class="table-danger">Vendredi 16 octobre</td>
+                                <td class="table-danger">Barcelona</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 23 octobre</td>
+                                <td class="table-success">Brands Hatch</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 30 octobre</td>
+                                <td class="table-warning">Brands Hatch</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 6 novembre</td>
+                                <td class="table-success">Hungaroring</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 13 novembre</td>
+                                <td class="table-warning">Hungaroring</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 20 novembre</td>
+                                <td class="table-success">Laguna Seca</td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Sprint 60 minutes</td>
+                                <td class="table-warning">Vendredi 27 novembre</td>
+                                <td class="table-warning">Laguna Seca</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Pratique officielle</td>
+                                <td class="table-success">Vendredi 4 décembre</td>
+                                <td class="table-success">Nurburgring GP</td>
+                            </tr>
+                            <tr>
+                                <td class="table-danger">Endurance 120 minutes</td>
+                                <td class="table-danger">Vendredi 11 décembre</td>
+                                <td class="table-danger">Nurburgring GP</td>
+                            </tr>
+                                </tbody>
+                            </table>
+
+                            <h1 class="py-5">Calendrier eGT3 Challenge Saison 2 - 2020</h1>
+                            <table class="table table-hover table-sm">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Durée</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Circuit</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 6 septembre</td>
+                                    <td class="table-success">Kyalami</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 13 septembre</td>
+                                    <td class="table-primary">Kyalami</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 20 septembre</td>
+                                    <td class="table-success">Misano</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 27 septembre</td>
+                                    <td class="table-primary">Misano</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 4 octobre</td>
+                                    <td class="table-success">Zolder</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 11 octobre</td>
+                                    <td class="table-primary">Zolder</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 18 octobre</td>
+                                    <td class="table-success">Barcelona</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-danger">Endurance 150 minutes</td>
+                                    <td class="table-danger">Dimanche 25 octobre</td>
+                                    <td class="table-danger">Barcelona</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 1 novembre</td>
+                                    <td class="table-success">Brands Hatch</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 8 novembre</td>
+                                    <td class="table-primary">Brands Hatch</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 15 novembre</td>
+                                    <td class="table-success">Hungaroring</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 22 novembre</td>
+                                    <td class="table-primary">Hungaroring</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 29 novembre</td>
+                                    <td class="table-success">Laguna Seca</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-primary">Challenge 75 minutes</td>
+                                    <td class="table-primary">Dimanche 6 décembre</td>
+                                    <td class="table-primary">Laguna Seca</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-success">Pratique officielle</td>
+                                    <td class="table-success">Dimanche 13 décembre</td>
+                                    <td class="table-success">Nurburgring GP</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-danger">Endurance 150 minutes</td>
+                                    <td class="table-danger">Dimanche 20 decembre</td>
+                                    <td class="table-danger">Nurburgring GP</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pt-5">
+                <a href="Saison_2_2020_eGT_Challenge.pdf" class="btn btn-outline-success btn-lg" role="button" aria-pressed="true" download="/Saison_2_2020_eGT_Challenge.pdf">Réglements</a>
+            </div>
+
+            <div class="row no-gutters d-flex justify-content-center text-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-5">
+                        <h5 class="card-title">eGT4 Sprint</h5>
+                        <div id="carouselgt4" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active justify-content-center">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Alpine_A110_GT4_1.jpg" alt="A110GT41">
+                                    <div class="carousel-caption d-none d-sm-block">
+                                        <h2>Alpine A110 GT4</h2>
+                                        <p>4 cylindre Turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Alpine_A110_GT4_2.jpg" alt="A110GT42">
+                                    <div class="carousel-caption">
+                                        <h2>Alpine A110 GT4</h2>
+                                        <p>4 cylindre Turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Aston_Martin_V8_GT4_1.jpg" alt="AMRV8GT41">
+                                    <div class="carousel-caption">
+                                        <h2>Aston Martin V8 GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Aston_Martin_V8_GT4_2.jpg" alt="AMRV8GT42">
+                                    <div class="carousel-caption">
+                                        <h2>Aston Martin V8 GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Audi_R8_LMS_GT4_1.jpg" alt="R8GT41">
+                                    <div class="carousel-caption">
+                                        <h2>Audi R8 LMS GT4</h2>
+                                        <p>V10 Aspiration Naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Audi_R8_LMS_GT4_2.jpg" alt="R8GT42">
+                                    <div class="carousel-caption">
+                                        <h2>Audi R8 LMS GT4</h2>
+                                        <p>V10 Aspiration Naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/BMW_M4_GT4_1.jpg" alt="BMWM4GT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>BMW M4 GT4</h2>
+                                        <p>I6 Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/BMW_M4_GT4_2.jpg" alt="BMWM4GT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>BMW M4 GT4</h2>
+                                        <p>I6 Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Camaro_GT4R_1.jpg" alt="CamaroGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Chevrolet Camaro GT4.R</h2>
+                                        <p>V8 Aspiration naturelle - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Camaro_GT4R_2.jpg" alt="CamaroGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Chevrolet Camaro GT4.R</h2>
+                                        <p>V8 Aspiration naturelle - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Ginetta_G55_GT4_1.jpg" alt="GinettaGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Ginetta G55 GT4</h2>
+                                        <p>V6 Aspiration naturelle - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Ginetta_G55_GT4_2.jpg" alt="GinettaGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Ginetta G55 GT4</h2>
+                                        <p>V6 Aspiration naturelle - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/KTM_Xbow_GT4_1.jpg" alt="KMTGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>KTM Xbow GT4</h2>
+                                        <p>4 cylindre turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/KTM_Xbow_GT4_2.jpg" alt="KMTGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>KTM Xbow GT4</h2>
+                                        <p>4 cylindre turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Maserati_MC_GT4_1.jpg" alt="MaseratiGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Maserati Gran Turismo MC GT4</h2>
+                                        <p>V6 Aspiration naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Maserati_MC_GT4_2.jpg" alt="MaseratiGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Maserati Gran Turismo MC GT4</h2>
+                                        <p>V6 Aspiration naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/McLaren_570S_GT4_1.jpg" alt="650sGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>McLaren 570s GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/McLaren_570S_GT4_2.jpg" alt="650sGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>McLaren 570s GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Mercedes_AMG_GT4_1.jpg" alt="AMGGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Mercedes AMG GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Mercedes_AMG_GT4_2.jpg" alt="AMGGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Mercedes AMG GT4</h2>
+                                        <p>V8 Bi-Turbo - Moteur Avant</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Porsche_Cayman_GT4_1.jpg" alt="CaymanGT41">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Porsche Cayman 718 GT4</h2>
+                                        <p>H6 Aspiration naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Voitures/gt4/compressor/Porsche_Cayman_GT4_2.jpg" alt="CaymanGT42">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Porsche Cayman 718 GT4</h2>
+                                        <p>H6 Aspiration naturelle - Moteur Central</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselgt4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselgt4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        <p class="card-text py-3 px-3 mx-3">Un championnat bimensuel de voitures GT4 comptant six courses sprint de 60 minutes et deux d'endurance individuelle de 120 minutes se déroulant le vendredi soir et diffusées en direct par l'équipe de SFTV.</p>
+                        <a href="egt4sprint.html" class="btn btn-outline-success btn-lg" role="button" aria-pressed="true">Calendrier et résultats</a>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-5">
+                        <h5 class="card-title">eGT3 Challenge</h5>
+                    <div id="carouselgt3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active justify-content-center">
+                                <img class="d-block w-100" src="img/Voitures/AstonMartinV8GT3-1-compressor.jpg" alt="AMRV8GT31">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h2>Aston Martin V8 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/AstonMartinV8GT3-2-compressor.jpg" alt="AMRV8GT32">
+                                <div class="carousel-caption">
+                                    <h2>Aston Martin V8 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/AstonMartinV12GT3-1-compressor.jpg" alt="AMRV12GT31">
+                                <div class="carousel-caption">
+                                    <h2>Aston Martin V12 GT3</h2>
+                                    <p>V12 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/AstonMartinV12GT3-2-compressor.jpg" alt="AMRV12GT32">
+                                <div class="carousel-caption">
+                                    <h2>Aston Martin V12 GT3</h2>
+                                    <p>V12 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/AudiR8LMSEvo-1-compressor.jpg" alt="R8LMSGT31">
+                                <div class="carousel-caption">
+                                    <h2>Audi R8 LMS GT3 Evo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/AudiR8LMSEvo-2-compressor.jpg" alt="R8LMSGT32">
+                                <div class="carousel-caption">
+                                    <h2>Audi R8 LMS GT3 Evo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32015-1-compressor.jpg" alt="ContGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Bentley Continental GT3 2015</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32015-2-compressor.jpg" alt="ContGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Bentley Continental GT3 2015</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32018-1-compressor.jpg" alt="ContGT3Evo1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Bentley Continental GT3 2018</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32018-2-compressor.jpg" alt="ContGT3Evo2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Bentley Continental GT3 2018</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BMWM6GT3-1-compressor.jpg" alt="M6GT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>BMW M6 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/BMWM6GT3-2-compressor.jpg" alt="M6G32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>BMW M6 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Ferrari488GT3-1-compressor.jpg" alt="F488GT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Ferrari 488 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Ferrari488GT3-2-compressor.jpg" alt="F488GT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Ferrari 488 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/HondaNSXGT3Evo-1-compressor.jpg" alt="NSXGT3Evo1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Honda NSX GT3 Evo</h2>
+                                    <p>V6 Bi-Turbo - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/HondaNSXGT3Evo-2-compressor.jpg" alt="NSXGT3Evo2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Honda NSX GT3 Evo</h2>
+                                    <p>V6 Bi-Turbo - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/JaguarG3GT3-1-compressor.jpg" alt="JagG3GT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Jaguar G3 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/JaguarG3GT3-2-compressor.jpg" alt="JagG3GT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Jaguar G3 GT3</h2>
+                                    <p>V8 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LamboHuracanGT3Evo-1-compressor.jpg" alt="HuracanGT3Evo1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lamborghini Huracan GT3 Evo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LamboHuracanGT3Evo-2-compressor.jpg" alt="HuracanGT3Evo2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lamborghini Huracan GT3 Evo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LamboHuracanSuperTrofeo-1-compressor%20(1).jpg" alt="HuracanSuperTrofeo1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lamborghini Huracan Super Trofeo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LamboHuracanSuperTrofeo-2-compressor.jpg" alt="HuracanSuperTrofeo2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lamborghini Huracan Super Trofeo</h2>
+                                    <p>V10 Aspiration Naturelle - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LexusRCFGT3-1-compressor.jpg" alt="RCFGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lexus RC-F GT3</h2>
+                                    <p>V8 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/LexusRCFGT3-2-compressor.jpg" alt="RCFGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lexus RC-F GT3</h2>
+                                    <p>V8 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/McLaren620SGT3-1-compressor.jpg" alt="650SGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>McLaren 650S GT3</h2>
+                                    <p>V8 Bi-turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/McLaren620SGT3-2-compressor.jpg" alt="650SGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>McLaren 650S GT3</h2>
+                                    <p>V8 Bi-turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/McLaren720SGT3-1-compressor.jpg" alt="720SGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>McLaren 720S GT3</h2>
+                                    <p>V8 Bi-turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/McLaren720SGT3-2-compressor.jpg" alt="720SGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>McLaren 720S GT3</h2>
+                                    <p>V8 Bi-turbo - Moteur Arrière</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/MercedesAMGGT3-1-compressor.jpg" alt="AMGGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Mercedes AMG GT3</h2>
+                                    <p>V8 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/MercedesAMGGT3-2-compressor.jpg" alt="AMGGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Mercedes AMG GT3</h2>
+                                    <p>V8 Aspiration Naturelle - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/NismoGTRGT32018-1-compressor.jpg" alt="GTRGT31">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Nissan Nismo GTR GT3 2018</h2>
+                                    <p>V6 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/NismoGTRGT32018-2-compressor.jpg" alt="GTRGT32">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Nissan Nismo GTR GT3 2018</h2>
+                                    <p>V6 Bi-Turbo - Moteur Avant</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911IIGT3R-1-compressor.jpg" alt="911IIGT3R1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 II GT3R</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911IIGT3R-2-compressor.jpg" alt="911IIGT3R2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 II GT3R</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911GT3R-1-compressor.jpg" alt="911GT3R1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 GT3R</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911GT3R-2-compressor.jpg" alt="911GT3R2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 GT3R</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911GT3Cup-1-compressor.jpg" alt="911GT3CUP1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 GT3 Cup Clubsport</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Voitures/Porsche911GT3Cup-2-compressor.jpg" alt="911GT3CUP2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Porsche 911 GT3 Cup Clubsport</h2>
+                                    <p>H6 Aspiration Naturelle - Moteur Central</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselgt3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselgt3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                        <p class="card-text py-3 px-3 mx-3">Un championnat hebdomadaire de voitures GT3 comptant six courses sprint de 75 minutes et deux d'endurance individuelle de 150 minutes se déroulant le dimanche soir.</p>
+                        <a href="egt3challenge.html" class="btn btn-outline-success btn-lg" role="button" aria-pressed="true">Calendrier et résultats</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Nos Pilotes------------------------------------------------------------------------------------------------------------
+<section id="pilotes">
+<div class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center py-3">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <a href="pilotes.html" class="btn btn-outline-success btn-lg" role="button" aria-pressed="true">Les Pilotes</a>
+        </div>
+    </div>
+</div>
+</section>
+--->
+
+<!--Pistes------------------------------------------------------------------------------------------------------------- -->
+<section id="pistes">
+<div class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center pt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>Les pistes</h2>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mx-0">
+        <div class="row d-flex text-center justify-content-center pt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="carouselpistes" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active justify-content-center">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Brands_Hatch-compressor.jpg" alt="Brands Hatch">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Brands Hatch</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Nurburgring-compressor.jpg" alt="Nurburgring GP">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Nurburgring GP</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Mount_Panorama_Bathurst-compressor.jpg" alt="Bathurst">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Bathurst</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Zolder_compressor.jpg" alt="Zolder">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Zolder</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Barcelona-compressor.jpg" alt="Barcelona">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Barcelona</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Hungaroring-compressor.jpg" alt="Hungaroring">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Hungaroring</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Kyalami-compressor.jpg" alt="Kyalami">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Kyalami</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Laguna_Seca-compressor.jpg" alt="Laguna Seca">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Laguna Seca</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Misano-compressor.jpg" alt="Misano">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Misano</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Monza-compressor.jpg" alt="Monza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Monza</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Paul_Ricard-compressor.jpg" alt="Paul-Ricard">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Paul-Ricard</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Silverstone-compressor.jpg" alt="Silverstone">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Silverstone</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Spa_Francorchamps-compressor.jpg" alt="Spa-Francorchamps">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Spa-Francorchamps</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Suzuka-compressor.jpg" alt="Suzuka">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Suzuka</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Pistes/Compressor/Zandvoort-compressor.jpg" alt="Zandvoort">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Zandvoort</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselpistes" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselpistes" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!--Équipement requis--------------------------------------------------------------------------------------------------------------->
+<section id="equipement">
+<div class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center py-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>L'équipement requis</h2>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center py-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-3">
+                <i class="fab fa-steam fa-3x pb-3"></i>
+                <h2>Assetto Corsa Competizione</h2>
+                <button type="button" class="btn btn-outline-dark"><a href="https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/" target="_blank">ACC 46$</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://store.steampowered.com/app/1201360/Assetto_Corsa_Competizione__Intercontinental_GT_Pack/" target="_blank">IGTC DLC 18$</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://store.steampowered.com/app/1337860/Assetto_Corsa_Competizione__GT4_Pack/" target="_blank">GT4 Pack DLC 28$</a></button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-3">
+                <i class="fas fa-desktop fa-3x pb-3"></i>
+                <h2>L'ordinateur</h2>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.facebook.com/lachambredesgamers/" target="_blank">1000$ et plus</a></button>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 pb-3">
+                <i class="fas fa-gamepad fa-3x pb-3"></i>
+                <h2>Volant et pédales</h2>
+                <!--<button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/thrusmaster-tmx-pro" target="_blank">300$+</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/ts-pc-racer" target="_blank">600$+</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/thrustmaster-ts-xw-racer-w-sparco-p310-wheel" target="_blank">900$+</a></button>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--Partenaires--------------------------------------------------------------------------------------------------------------->
+<section id="partenairestest">
+    <div class="container-fluid px-5 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center justify-content-md-center justify-content-sm-center py-5">
+            <div class="col-lg-12 col-md-12 col-sm-12 py-5">
+                <h2>Nos précieux partenaires et commanditaires</h2>
+            </div>
+            <div class="container-fluid px-0 mx-0">
+                <div class="row no-gutters d-flex text-center justify-content-center py-3">
+                </div>
+            </div>
+            <div class="container-fluid px-0 mx-0">
+                <div class="row no-gutters d-flex text-center justify-content-center py-3">
+                    <div class="col-lg-4 col-md-4 col-sm-6 pb-3 px-2">
+                        <a href="https://simracingcanada.com/" target="_blank"><img class="img-fluid zoom" src="img/SimRacingCanada.png" alt="Sim Racing Canada" width="60%"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 pb-3 px-2">
+                        <a href="https://porschequebec.com/" target="_blank"><img class="img-fluid zoom" src="img/Centre%20Porsche%20Quebec%20fond%20transparent.png" alt="Centre Porsche Québec" width="60%"></a>
+                    </div>
+                </div>
+                <div class="row no-gutters d-flex text-center justify-content-center py-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6 pb-3 px-2">
+                        <a href="https://www.msgear.ca/" target="_blank"><img class="img-fluid zoom" src="img/MSGear.png" alt="MSGear" width="60%"></a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 pb-3 px-2">
+                        <a href="https://www.facebook.com/lachambredesgamers/" target="_blank"><img class="img-fluid zoom" src="img/ChambreDesGamers2.png" alt="La Chambre Des Gamers" width="40%"></a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 pb-3 px-2">
+                        <a href="https://www.facebook.com/GGGemergence/" target="_blank"><img class="img-fluid zoom" src="img/apklq/Emergence_Sport_Auto_2.png" alt="Emergence Sport Auto" width="60%"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid px-0 mx-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 pb-3 px-2">
+                    <a href="https://www.paypal.com/donate/?token=2g7rMvqm-dGLJBMtKW_mstyvOuxiAGA4Rtr3vooh1qih78Cqql2Tpt_mMtk5qYZgzIgwKG&country.x=CA&locale.x=CA" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Faites un don</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 offset-4 text-center">
+            <img src="img/logo_egt3.png" class="img-fluid px-2 py-2" width="200px" alt="egt3logo">
+            <p class="text-white">Copyright &copy; Julien Hébert 2020</p>
+            <span class="text-white"><i class="far fa-envelope"></i> <a HREF="mailto:julien@egtchallenge.ca" target="_blank">julien@egtchallenge.ca</a>
+            </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+
+
+
+</body>
+
+
+</html>

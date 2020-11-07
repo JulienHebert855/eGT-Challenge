@@ -1,0 +1,2763 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175922394-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175922394-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Classement eGT3 Challenge</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbar">
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-xl navbar-dark p-l-15 pr-0 mx-0">
+        <a class="navbar-brand" href="index.html"><img src="img/logo_egt3.png" class="img-fluid px-1 py-1" width="200px" alt="egt3logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse sticky-top" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+            <li class="nav-item"><a class="nav-link" href="equipe.html">Équipe</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarresultats" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Résultats
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Résultats">
+                    <a class="dropdown-item" href="egt4sprint.html">eGT4 Sprint 2020 - Saison 2</a>
+                    <a class="dropdown-item" href="egt3challenge.html">eGT3 Challenge 2020 - Saison 2</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://forms.gle/bJBoJrkCn8UyKKRVA" target="_blank">Rapport d'incident</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarmedia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Médias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://jeuxvideo.rds.ca/une-ligue-quebecoise-de-sim-racing-sur-assetto-corsa-competizione/" target="_blank">RDS Jeux-Vidéos</a>
+                    <a class="dropdown-item" href="https://www.poleposition.ca/actualite/2020/04/02/acc-quebec-une-serie-virtuelle-avec-un-prix-bien-reel-en-fin-de-saison/" target="_blank">Pole-Position Magazine</a>
+                    <a class="dropdown-item" href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yNjE0ZTllMC9wb2RjYXN0L3Jzcw/episode/ZGIzMmYxZjAtYTExMi00MDlkLTk3ZjktZWEwZmFlNGE3NGU1?sa=X&ved=2ahUKEwjF48f87bfrAhVDnnIEHcUtCt4QkfYCegQIARAF" target="_blank">Balado SFTV Ép.6 - Google Podcast</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/2584667424939968/videos/295922328444478" target="_blank">Balado SFTV Ép.6 - Facebook</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarresourcesexternes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ressources externes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/competizione" target="_blank">Site Web ACC</a>
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/forum/index.php#assetto-corsa-competizione.60" target="_blank">Forums ACC</a>
+                    <a class="dropdown-item" href="https://sro-esport.com/" target="_blank">SRO E-Sports</a>
+                </div>
+            </li>
+            </ul>
+
+            <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
+            <span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/channel/UCRlbt6ul3iydP1Z8qAkuDpw?" target="_blank"><i class="fab fa-youtube"></i></a></span>
+            <span class="navbar-brand"><a class="nav-link" href="https://discord.gg/DMhH7Hq" target="_blank"><i class="fab fa-discord"></i></a></span>
+        </div>
+    </nav>
+</section>
+
+<!-- Video Background Header -->
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://i.imgur.com/GQeAoOR.mp4"
+                type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-12 text-white pt-5 mt-5">
+                <h1 class="display-4 mt-3 pt-3">eGT Challenge</h1>
+                <p class="lead pt-3">Le championnat Canadien de courses virtuelles mettant en vedette les très populaires voitures GT3 et GT4. Voyez ce que les pilotes aiment de notre série :</p>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h4>"Le fair-play entre chacun des pilotes"</h4>
+                            <p>-D. Van Daele</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Professionalisme, entraide, compétitivité."</h4>
+                            <p>-A. Leon</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Le plaisir entre les pilotes et des course propres"</h4>
+                            <P>-G. Lafrenaye</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Les pilotes roulent très clean, le partage sur le discord est plus qu'apprécié aussi."</h4>
+                            <P>-J.-P. Paré</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Professionnalisme (pointage, site web, Discord, diffusion etc)."</h4>
+                            <P>-P.-O. Cloutier</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"La transparence et la flexibilité des organisateurs, l'ajout de l'équipe du SFTV pour la diffusion, la niveau des pilotes."</h4>
+                            <P>-E. Carpentier</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Les réglements sont bien défini et bien appliqué, les informations bien communiquer, bonne visibilité de la ligue."</h4>
+                            <P>-J. Boivin</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Bonne participation aux courses / série pour tout les niveaux / camaraderie entre les pilotes / plateformes ACC qui est le meilleur simulateur selon moi."</h4>
+                            <P>-J.-F. Bilodeau</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Les pilotes cherchent à s'améliorer constamment. Il y a une excellente entraide entres les pilotes."</h4>
+                            <P>-S.-J. Laurin</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"La grande majorité des pilotes interagissent entre eux, s'entraident et il y a beaucoup de respect mutuel, ce qui donne des courses très propres. On a aussi des pilotes de tous les niveaux et c'est intéressant de voir la progression de certains et les batailles au classement dans les différentes classes."</h4>
+                            <P>-D. Bélanger</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Avoir ouvert la porte aux gens de tous niveaux rend le groupe de coureure plus plaisant et le système de coaching pour que les pro aident les amateurs sont trois choses qui m'ont attiré dans cette série."</h4>
+                            <P>-P.-L. Maillé</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Le Discord est très facile à utiliser et favorise les échanges entre les compétiteurs. Il permet un excellent encadrement pour les nouveaux pilotes."</h4>
+                            <P>-T. Lavoie</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Le niveau de compétition, la possibilité d'évoluer et l’assiduité des courses!"</h4>
+                            <P>-C. Baillargeon</P>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>"Le niveau élevé du talent des pilotes, le respect entre pilote, l’entraide, la maturité des pilotes, bref j’adore les membres de cette ligue. Continuer le travail admirable que vous faites. Je suis vraiment content de faire partie de cette ligue. J’ai découvert une nouvelle façons de profiter de ma passion pour la course automobile et j’adore ça!"</h4>
+                            <P>-S. Berger</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center pt-5 px-2 mx-2">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 class="py-5">Calendrier eGT3 Challenge Saison 2-2020 </h1>
+            <table class="table table-hover table-sm">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Circuit</th>
+                    <th scope="col">Durée</th>
+                    <th scope="col">Résultats</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <th scope="row">Dimanche 13 septembre</th>
+                    <td>Kyalami</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalkyalami">Résultats</button>
+                        <div class="modal fade" id="modalkyalami" tabindex="-1" role="dialog" aria-labelledby="modalkyalami" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Kyalami - 13 septembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                                <!-- Tableau Classement Général-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Classe</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Pro</td>
+                                                        <td>Jonathan Boivin</td>
+                                                        <td>Mercedes-AMG GT3</td>
+                                                        <td>1:40.797</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Pro</td>
+                                                        <td>Marc-Antoine Landry</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:41.463</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Pro</td>
+                                                        <td>Thomas Lavoie</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:41.973</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Pro</td>
+                                                        <td>David Bélanger</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:41.799</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Pro</td>
+                                                        <td>Eric Bourduas</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:42.174</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>Pro</td>
+                                                        <td>Gabriel Lafrenaye</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:42.705</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>Pro</td>
+                                                        <td>Alexandre Pezé</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:42.288</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>Pro</td>
+                                                        <td>Guillaume Boyer</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.071</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:42.729</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.155</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td>Pro</td>
+                                                        <td>Jean-François Bilodeau</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:42.681</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Antoine Blanc</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:42.843</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Florian Gilles</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:42.882</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.728</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">15</th>
+                                                        <td>Pro</td>
+                                                        <td>Serge Martin</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:43.083</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">16</th>
+                                                        <td>Pro</td>
+                                                        <td>Tommy Landry</td>
+                                                        <td>Lexus RC F GT3</td>
+                                                        <td>1:43.575</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">17</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Vincent Perreault</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:43.800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">18</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.665</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">19</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:44.199</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">20</th>
+                                                        <td>Pro</td>
+                                                        <td>Jeremy Delwarte</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:43.557</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">21</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Maxim Laforest</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:43.614</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">22</th>
+                                                        <td>Pro</td>
+                                                        <td>Pierre-Olivier Cloutier</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:42.978</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">23</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Edmundo Campos</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.887</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">24</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Bryan Deschênes</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:45.405</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">25</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Sylvain Berger</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:43.860</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">26</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Nicholas Dubois Cloutier</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:44.604</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">27</th>
+                                                        <td>Pro</td>
+                                                        <td>Isaiah Byers</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:42.330</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">28</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Yannick Léger</td>
+                                                        <td>Nissan GT-R Nismo GT3</td>
+                                                        <td>1:46.035</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">29</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Sylvain Dubé</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:46.677</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">30</th>
+                                                        <td>Pro</td>
+                                                        <td>Luc Massé</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.317</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">31</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Stéphane Goyette</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.941</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">32</th>
+                                                        <td>Pro</td>
+                                                        <td>Patrice Deltell (DNF)</td>
+                                                        <td>Nissan GT-R Nismo GT3</td>
+                                                        <td>1:43.197</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">33</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Pierre Girard (DNF)</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:43.218</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">34</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Frank Lacerte (DNF)</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:44.817</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">35</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Quentin Sanchez (DNF)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:44.682</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">36</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Alexis Germain (DNF)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">37</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Francis Hinse (DNF)</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:42.729</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.155</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Antoine Blanc</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:42.843</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Florian Gilles</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:42.882</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.728</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>Vincent Perreault</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:43.800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:43.665</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:44.199</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>Maxim Laforest</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:43.614</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>Sylvain Berger</td>
+                                                        <td>McLaren 720S GT34</td>
+                                                        <td>1:43.860</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td>Sylvain Dubé</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:46.677</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <td>Stéphane Goyette</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.941</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <td>Pierre Girard (DNF)</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:43.218</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <td>Quentin Sanchez (DNF)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:44.682</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">15</th>
+                                                        <td>Alexis Germain (DNF)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">16</th>
+                                                        <td>Francis Hinse (DNF)</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Edmundo Campos</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:43.887</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Bryan Deschênes</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:45.405</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Nicholas Dubois Cloutier</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:44.604</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Yannick Léger</td>
+                                                        <td>Nissan GT-R Nismo GT3</td>
+                                                        <td>1:46.035</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Frank Lacerte (DNF)</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:44.817</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 27 septembre</th>
+                    <td>Misano</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalmisano">Résultats</button>
+                        <div class="modal fade" id="modalmisano" tabindex="-1" role="dialog" aria-labelledby="modalmisano" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Misano - 27 septembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Général-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-bordered table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Classe</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Pro</td>
+                                                        <td>David Bélanger</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:35.265</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Pro</td>
+                                                        <td>Jean-François Bilodeau</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:35.106</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Pro</td>
+                                                        <td>Alexandre Pezé</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:35.223</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Pro</td>
+                                                        <td>Thomas Lavoie</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:35.556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Pro</td>
+                                                        <td>Tommy Landry</td>
+                                                        <td>Lexus RC F GT3</td>
+                                                        <td>1:35.961</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Pierre Girard</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:36.114</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>Pro</td>
+                                                        <td>Pierre-Olivier Cloutier</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:35.808</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>Pro</td>
+                                                        <td>Gabriel Lafrenaye</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:35.862</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>Pro</td>
+                                                        <td>Luc Massé</td>
+                                                        <td>Porsche 911 II GT3 R</td>
+                                                        <td>1:35.946</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>Pro</td>
+                                                        <td>Isaiah Byers</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:35.178</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Alexis Germain</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:36.459</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Vincent Perreault</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <td>Pro</td>
+                                                        <td>Eric Bourduas</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>1:35.649</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Florian Gilles</td>
+                                                        <td>Nissan GT-R Nismo GT3 2018</td>
+                                                        <td>1:36.108</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">15</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:36.042</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">16</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Sylvian Berger</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:36.705</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">17</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.135</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">18</th>
+                                                        <td>Pro</td>
+                                                        <td>Patrice Deltell</td>
+                                                        <td>Nissan GT-R Nismo GT3 2018</td>
+                                                        <td>1:36.411</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">19</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:37.158</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">20</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Stéphane Goyette</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>1:37.266</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">21</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.918</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">22</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Edmundo Campos</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>1:37.194</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">23</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Yannick Léger</td>
+                                                        <td>Nissan GT-R Nismo GT3 2018</td>
+                                                        <td>1:37.764</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">24</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Jonathan Michaud</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:38.787</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">25</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Bryan Deschênes</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:39.903</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">26</th>
+                                                        <td class="silver">Silver</td>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:37.635</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">27</th>
+                                                        <td class="am">AM</td>
+                                                        <td>Franck Lacerte</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:38.223</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">28</th>
+                                                        <td>Pro</td>
+                                                        <td>Jeremy Delwarte</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:35.847</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">29</th>
+                                                        <td>Pro</td>
+                                                        <td>Marc-Antoine Landry (DSQ)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:34.926</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">30</th>
+                                                        <td>Pro</td>
+                                                        <td>Serge Martin (DNF)</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:36.333</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">31</th>
+                                                        <td>Pro</td>
+                                                        <td>Antoine Blanc (DNF)</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-bordered table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Pierre Girard</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:36.114</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Alexis Germain</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:36.459</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Vincent Perreault</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Florian Gilles</td>
+                                                        <td>Nissan GT-R Nismo GT3 2018</td>
+                                                        <td>1:36.108</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:36.042</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>Sylvian Berger</td>
+                                                        <td>McLaren 720S GT3</td>
+                                                        <td>1:36.705</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.135</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:37.158</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>Stéphane Goyette</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>1:37.266</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.918</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage</td>
+                                                        <td>1:37.635</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-bordered table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Edmundo Campos</td>
+                                                        <td>Porsche 991.2 GT3 R</td>
+                                                        <td>1:37.194</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Yannick Léger</td>
+                                                        <td>Nissan GT-R Nismo GT3 2018</td>
+                                                        <td>1:37.764</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Jonathan Michaud</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:38.787</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Bryan Deschênes</td>
+                                                        <td>Audi R8 LMS Evo</td>
+                                                        <td>1:39.903</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Franck Lacerte</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:38.223</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 11 octobre</th>
+                    <td>Zolder</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalzolder">Résultats</button>
+                        <div class="modal fade" id="modalzolder" tabindex="-1" role="dialog" aria-labelledby="modalzolder" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Zolder - 11 octobre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Pro-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Classe</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <th>Pro</th>
+                                                        <td>Tommy Landry</td>
+                                                        <td>Lexus RC F GT3</td>
+                                                        <td>1:34.827</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <th>Pro</th>
+                                                        <td>Eric Bourduas</td>
+                                                        <td>Porsche 991 II GT3 R</td>
+                                                        <td>1:36.114</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <th>Pro</th>
+                                                        <td>Gabriel Lafrenaye</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.186</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <th>Pro</th>
+                                                        <td>Nicolas Drouin</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:35.568</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <th>Pro</th>
+                                                        <td>Pierre-Olivier Cloutier</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>1:36.228</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <th>Pro</th>
+                                                        <td>Jean-François Bilodeau</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:36.447</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <th>Pro</th>
+                                                        <td>Jeremy Delwarte</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.555</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <th>Pro</th>
+                                                        <td>David Belanger</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:36.255</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.636</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.831</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
+                                                        <th>Pro</th>
+                                                        <td>Thomas Lavoie</td>
+                                                        <td>Audi R8 LMS EVO</td>
+                                                        <td>1:37.281</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">12</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.528</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">13</th>
+                                                        <th>Pro</th>
+                                                        <td>Serge Martin</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.024</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">14</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:37.233</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">15</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Alexis Germain</td>
+                                                        <td>Audi R8 LMS EVO</td>
+                                                        <td>1:38.271</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">16</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.186</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">17</th>
+                                                        <th>Pro</th>
+                                                        <td>Alexandre Pezé</td>
+                                                        <td>Bentley Continental GT3</td>
+                                                        <td>1:35.457</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">18</th>
+                                                        <th class="am">AM</th>
+                                                        <td>Bryan Deschênes</td>
+                                                        <td>Audi R8 LMS EVO</td>
+                                                        <td>1:41.220</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">19</th>
+                                                        <th class="am">AM</th>
+                                                        <td>Yannick Léger</td>
+                                                        <td>Nissan GT R Nismo GT3</td>
+                                                        <td>1:38.157</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">20</th>
+                                                        <th class="am">AM</th>
+                                                        <td>Edmundo Campos</td>
+                                                        <td>Porsche 991 II GT3 R</td>
+                                                        <td>1:40.665</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">21</th>
+                                                        <th class="am">AM</th>
+                                                        <td>Franck Lacerte</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:39.855</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">22</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Stephane Goyette (DNF)</td>
+                                                        <td>Porsche 991 II GT3 R</td>
+                                                        <td>1:37.746</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">23</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Florian Gilles (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>1:39.030</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">24</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Sylvain Berger (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>1:40.038</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">25</th>
+                                                        <th>Pro</th>
+                                                        <td>Isaiah Byers (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">26</th>
+                                                        <th>Pro</th>
+                                                        <td>Luc Massé (DNF)</td>
+                                                        <td>Porsche 991 II GT3 R</td>
+                                                        <td>---</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">27</th>
+                                                        <th class="silver">Silver</th>
+                                                        <td>Patrick Trépanier (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>--</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">28</th>
+                                                        <th>Pro</th>
+                                                        <td>Jonathan Boivin (DNF)</td>
+                                                        <td>Mercedes AMG GT3</td>
+                                                        <td>1:34.002</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td>Dannick Vallée</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.636</td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td>Jean-Louis Deschênes</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.831</td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td>Jean-François Nault</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:36.528</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Carl Baillargeon</td>
+                                                        <td>AMR V8 Vantage GT3</td>
+                                                        <td>1:37.233</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Alexis Germain</td>
+                                                        <td>Audi R8 LMS EVO</td>
+                                                        <td>1:38.271</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>David Soucy</td>
+                                                        <td>Ferrari 488 GT3</td>
+                                                        <td>1:36.186</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>Stephane Goyette (DNF)</td>
+                                                        <td>Porsche 991 II GT3 R</td>
+                                                        <td>1:37.746</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>Florian Gilles (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>1:39.030</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>Sylvain Berger (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>1:40.038</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>Patrick Trépanier (DNF)</td>
+                                                        <td>McLaren 720s GT3</td>
+                                                        <td>--</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="gold">
+                                                            <th scope="row">1</th>
+                                                            <td>Bryan Deschênes</td>
+                                                            <td>Audi R8 LMS EVO</td>
+                                                            <td>1:41.220</td>
+                                                        </tr>
+                                                        <tr class="silver">
+                                                            <th scope="row">2</th>
+                                                            <td>Yannick Léger</td>
+                                                            <td>Nissan GT R Nismo GT3</td>
+                                                            <td>1:38.157</td>
+                                                        </tr>
+                                                        <tr class="bronze">
+                                                            <th scope="row">3</th>
+                                                            <td>Edmundo Campos</td>
+                                                            <td>Porsche 991 II GT3 R</td>
+                                                            <td>1:40.665</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td>Franck Lacerte</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:39.855</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 25 octobre</th>
+                    <td>Barcelona</td>
+                    <th>Endurance 150 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalbarcelona">Résultats</button>
+                        <div class="modal fade" id="modalbarcelona" tabindex="-1" role="dialog" aria-labelledby="modalbarcelona" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Barcelona - 25 octobre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Général-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Classe</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="gold">
+                                                            <th scope="row">1</th>
+                                                            <th>Pro</th>
+                                                            <td>Ismael Labrecque</td>
+                                                            <td>Lamborghini Huracan GT3 EVO</td>
+                                                            <td>1:44.202</td>
+                                                        </tr>
+                                                        <tr class="silver">
+                                                            <th scope="row">2</th>
+                                                            <th>Pro</th>
+                                                            <td>Jonathan Boivin</td>
+                                                            <td>Mercedes AMG GT3</td>
+                                                            <td>1:43.365</td>
+                                                        </tr>
+                                                        <tr class="bronze">
+                                                            <th scope="row">3</th>
+                                                            <th>Pro</th>
+                                                            <td>Isaiah Byers</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:44.436</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <th>Pro</th>
+                                                            <td>Pierre-Olivier Cloutier</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:44.856</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <th>Pro</th>
+                                                            <td>Eric Bourduas</td>
+                                                            <td>Porsche 991 II GT3 R</td>
+                                                            <td>1:45.576</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">6</th>
+                                                            <th>Pro</th>
+                                                            <td>David Belanger</td>
+                                                            <td>Bentley Continental GT3</td>
+                                                            <td>1:45.234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">7</th>
+                                                            <th>Pro</th>
+                                                            <td>Thomas Lavoie</td>
+                                                            <td>Audi R8 LMS EVO</td>
+                                                            <td>1:44.850</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">8</th>
+                                                            <th>Pro</th>
+                                                            <td>Tommy Landry</td>
+                                                            <td>Lexus RC F GT3</td>
+                                                            <td>1:45.468</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">9</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Pierre Girard</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:45.453</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">10</th>
+                                                            <th>Pro</th>
+                                                            <td>Serge Martin</td>
+                                                            <td>Ferrari 488 GT3</td>
+                                                            <td>1:46.263</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">11</th>
+                                                            <th>Pro</th>
+                                                            <td>Jean-François Bilodeau</td>
+                                                            <td>Bentley Continental GT3</td>
+                                                            <td>1:45.921</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">12</th>
+                                                            <th>Pro</th>
+                                                            <td>Gabriel Lafrenaye</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:45.468</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">13</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Dannick Vallée</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:46.143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">14</th>
+                                                            <th>Pro</th>
+                                                            <td>Jeremy Delwarte</td>
+                                                            <td>Ferrari 488 GT3</td>
+                                                            <td>1:45.942</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">15</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Carl Baillargeon</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:47.238</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">16</th>
+                                                            <th class="am">AM</th>
+                                                            <td>Edmundo Campos</td>
+                                                            <td>Porsche 991 II GT3 R</td>
+                                                            <td>1:46.893</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">17</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Jean-Louis Deschênes</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:47.310</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">18</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>David Soucy</td>
+                                                            <td>Ferrari 488 GT3</td>
+                                                            <td>1:47.172</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">19</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Jean-François Nault</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:46.227</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">20</th>
+                                                            <th class="am">AM</th>
+                                                            <td>Yannick Léger</td>
+                                                            <td>Nissan GT R Nismo GT3</td>
+                                                            <td>1:47.394</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">21</th>
+                                                            <th class="am">AM</th>
+                                                            <td>Bryan Deschênes</td>
+                                                            <td>Audi R8 LMS EVO</td>
+                                                            <td>1:47.697</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">22</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Sylvain Berger</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:47.478</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">23</th>
+                                                            <th class="am">AM</th>
+                                                            <td>Franck Lacerte</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:48.639</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">24</th>
+                                                            <th class="silver">Silver</th>
+                                                            <td>Florian Gilles</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:46.173</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">25</th>
+                                                            <th>Pro</th>
+                                                            <td>Luc Massé</td>
+                                                            <td>Porsche 991 II GT3 R</td>
+                                                            <td>1:46.989</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">26</th>
+                                                            <th>Pro</th>
+                                                            <td>Alexandre Pezé</td>
+                                                            <td>Bentley Continental GT3</td>
+                                                            <td>1:45.513</td>
+                                                        </tr>
+                                                        </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="gold">
+                                                            <th scope="row">1</th>
+                                                            <td>Pierre Girard</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:45.453</td>
+                                                        </tr>
+                                                        <tr class="silver">
+                                                            <th scope="row">2</th>
+                                                            <td>Dannick Vallée</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:46.143</td>
+                                                        </tr>
+                                                        <tr class="bronze">
+                                                            <th scope="row">3</th>
+                                                            <td>Carl Baillargeon</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:47.238</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td>Jean-Louis Deschênes</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:47.310</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <td>David Soucy</td>
+                                                            <td>Ferrari 488 GT3</td>
+                                                            <td>1:47.172</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">6</th>
+                                                            <td>Jean-François Nault</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:46.227</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">7</th>
+                                                            <td>Sylvain Berger</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:47.478</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">8</th>
+                                                            <td>Florian Gilles</td>
+                                                            <td>McLaren 720s GT3</td>
+                                                            <td>1:46.173</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="gold">
+                                                            <th scope="row">1</th>
+                                                            <td>Edmundo Campos</td>
+                                                            <td>Porsche 991 II GT3 R</td>
+                                                            <td>1:46.893</td>
+                                                        </tr>
+                                                        <tr class="silver">
+                                                            <th scope="row">2</th>
+                                                            <td>Yannick Léger</td>
+                                                            <td>Nissan GT R Nismo GT3</td>
+                                                            <td>1:47.394</td>
+                                                        </tr>
+                                                        <tr class="bronze">
+                                                            <th scope="row">3</th>
+                                                            <td>Bryan Deschênes</td>
+                                                            <td>Audi R8 LMS EVO</td>
+                                                            <td>1:47.697</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td>Franck Lacerte</td>
+                                                            <td>AMR V8 Vantage GT3</td>
+                                                            <td>1:48.639</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 8 novembre</th>
+                    <td>Brands Hatch</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalbrands">Résultats</button>
+                        <div class="modal fade" id="modalbrands" tabindex="-1" role="dialog" aria-labelledby="modalbrands" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Brands Hatch - 8 novembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Pro-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 22 novembre</th>
+                    <td>Hungaroring</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalhungaroring">Résultats</button>
+                        <div class="modal fade" id="modalhungaroring" tabindex="-1" role="dialog" aria-labelledby="modalhungaroring" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Hungaroring - 22 novembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Général-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dimanche 6 décembre</th>
+                    <td>Laguna Seca</td>
+                    <th>Challenge 75 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modallaguna">Résultats</button>
+                        <div class="modal fade" id="modallaguna" tabindex="-1" role="dialog" aria-labelledby="modallaguna" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Laguna Seca - 6 décembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement Pro-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Vendredi 20 décembre</th>
+                    <td>Nurburgring GP</td>
+                    <th>Endurance 150 minutes</th>
+                    <th>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalnurb">Résultats</button>
+                        <div class="modal fade" id="modalnurb" tabindex="-1" role="dialog" aria-labelledby="modalnurb" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Nurburgring GP - 20 décembre 2020</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid justify-content-center px-3">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <!-- Tableau Classement général-->
+                                                <h1>Résultats Général</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement Silver -->
+                                                <h1>Résultats Silver</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- Tableau Classement AM -->
+                                                <h1>Résultats AM</h1>
+                                                <table class="table table-hover table-sm">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">Position</th>
+                                                        <th scope="col">Pilote</th>
+                                                        <th scope="col">Voiture</th>
+                                                        <th scope="col">Meilleur temps</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="gold">
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="silver">
+                                                        <th scope="row">2</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bronze">
+                                                        <th scope="row">3</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container-fluid px-0 mx-0">
+            <div class="row no-gutters d-flex text-center justify-content-center pt-5 px-2 mx-2">
+
+                <div class="col-lg-8 col-md-8 col-sm-12 px-2 mx-2">
+                    <h1>Manufacturiers Général</h1>
+                    <table class="table table-hover table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Voiture</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gold">
+                            <th scope="row">1</th>
+                            <td>Bentley Continental GT3</td>
+                            <td>104</td>
+                        </tr>
+                        <tr class="silver">
+                            <th scope="row">2</th>
+                            <td>McLaren 720S GT3</td>
+                            <td>83</td>
+                        </tr>
+                        <tr class="bronze">
+                            <th scope="row">3</th>
+                            <td>Mercedes-AMG GT3</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>57</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Porsche 911 II GT3 R</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Lamborghini Huracan GT3 EVO</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>AMR V8 Vantage</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Lexus RC F GT3</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Ferrari 488 GT3</td>
+                            <td>8</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 px-2 mx-2">
+                    <h1>Général</h1>
+                    <table class="table table-hover table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col">Pilote</th>
+                            <th scope="col">Voiture</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gold">
+                            <th scope="row">1</th>
+                            <td>Pro</td>
+                            <td>Jonathan Boivin</td>
+                            <td>Mercedes-AMG GT3</td>
+                            <td>61</td>
+                        </tr>
+                        <tr class="silver">
+                            <th scope="row">2</th>
+                            <td>Pro</td>
+                            <td>David Bélanger</td>
+                            <td>Bentley Continental GT3 2018</td>
+                            <td>57</td>
+                        </tr>
+                        <tr class="bronze">
+                            <th scope="row">3</th>
+                            <td>Pro</td>
+                            <td>Ismael Labrecque</td>
+                            <td>Lamborghini Huracan GT3 Evo</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Pro</td>
+                            <td>Eric Bourduas</td>
+                            <td>Porsche 911 II GT3 R</td>
+                            <td>48</td>   
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Pro</td>
+                            <td>Tommy Landry</td>
+                            <td>Lexus RC F GT3</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Pro</td>
+                            <td>Pierre-Olivier Cloutier</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Pro</td>
+                            <td>Thomas Lavoie</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>39</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Pro</td>
+                            <td>Isaiah Byers</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Pro</td>
+                            <td>Gabriel Lafrenaye</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Pro</td>
+                            <td>Jean-François Bilodeau</td>
+                            <td>Bentley Continental GT3 2018</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Pro</td>
+                            <td>Alexandre Pezé</td>
+                            <td>Bentley Continental GT3</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Pro</td>
+                            <td>Marc-Antoine Landry</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Pro</td>
+                            <td>Nicolas Drouin</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td class="silver">Silver</td>
+                            <td>Pierre Girard</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Pro</td>
+                            <td>Jeremy Delwarte</td>
+                            <td>Ferrari 488 GT3</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Pro</td>
+                            <td>Guillaume Boyer</td>
+                            <td>Porsche 911 II GT3 R</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td class="silver">Silver</td>
+                            <td>Jean-François Nault</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td class="silver">Silver</td>
+                            <td>Dannick Vallée</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Pro</td>
+                            <td>Luc Massé</td>
+                            <td>Porsche 991.2 GT3 R</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>      
+                            <th scope="row">20</th>
+                            <td class="silver">Silver</td>
+                            <td>Jean-Louis Deschênes</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Pro</td>
+                            <td>Serge Martin</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">22</th>
+                            <td class="silver">Silver</td>
+                            <td>Alexis Germain</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">23</th>
+                            <td class="silver">Silver</td>
+                            <td>Vincent Perreault</td>
+                            <td>Ferrari 488 GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">24</th>
+                            <td class="silver">Silver</td>
+                            <td>Antoine Blanc</td>
+                            <td>Porsche 991.2 GT3 R</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <td class="silver">Silver</td>
+                            <td>Florian Gilles</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>0</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">26</th>
+                            <td class="silver">Silver</td>
+                            <td>Carl Baillargeon</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">27</th>
+                            <td class="silver">Silver</td>
+                            <td>David Soucy</td>
+                            <td>Ferrari 488 GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">28</th>
+                            <td class="am">AM</td>
+                            <td>Edmundo Campos</td>
+                            <td>Porsche 911 II GT3 R</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">29</th>
+                            <td class="silver">Silver</td>
+                            <td>Sylvain Berger</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">30</th>
+                            <td class="am">AM</td>
+                            <td>Bryan Deschênes</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">31</th>
+                            <td>Pro</td>
+                            <td>Patrice Deltell</td>
+                            <td>Nissan GT-R Nismo GT3 2018</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">32</th>
+                            <td class="am">AM</td>
+                            <td>Yannick Léger</td>
+                            <td>Nissan GT-R Nismo GT3 2018</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">33</th>
+                            <td class="silver">Silver</td>
+                            <td>Stéphane Goyette</td>
+                            <td>Porsche 991.2 GT3 R</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">34</th>
+                            <td class="am">AM</td>
+                            <td>Frank Lacerte</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">35</th>
+                            <td class="silver">Silver</td>
+                            <td>Maxim Laforest</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">36</th>
+                            <td class="am">AM</td>
+                            <td>Jonathan Michaud</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">37</th>
+                            <td class="am">AM</td>
+                            <td>Nicholas Dubois Cloutier</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">38</th>
+                            <td class="silver">Silver</td>
+                            <td>Sylvain Dubé</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">39</th>
+                            <td class="silver">Silver</td>
+                            <td>Quentin Sanchez</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 px-2 mx-2">
+                    <h1>Silver</h1>
+                    <table class="table table-hover table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Pilote</th>
+                            <th scope="col">Voiture</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gold">
+                            <th scope="row">1</th>
+                            <td>Pierre Girard</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>75</td>
+                        </tr>
+                        <tr class="silver">
+                            <th scope="row">2</th>
+                            <td>Dannick Vallée</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>73</td>
+                        </tr>
+                        <tr class="bronze">
+                            <th scope="row">3</th>
+                            <td>Jean-François Nault</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>66</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Jean-Louis Deschênes</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Carl Baillargeon</td>
+                            <td>AMR V8 Vantage GT3</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>David Soucy</td>
+                            <td>Ferrari 488 GT3</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Florian Gilles</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Alexis Germain</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Vincent Perreault</td>
+                            <td>Ferrari 488 GT3</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Sylvain Berger</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Antoine Blanc</td>
+                            <td>Porsche 991.2 GT3 R</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Stéphane Goyette</td>
+                            <td>Porsche 991.2 GT3 R</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Maxim Laforest</td>
+                            <td>McLaren 720S GT3</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Sylvain Dubé</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Quentin Sanchez</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 px-2 mx-2">
+                    <h1>AM</h1>
+                    <table class="table table-hover table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Pilote</th>
+                            <th scope="col">Voiture</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gold">
+                            <th scope="row">1</th>
+                            <td>Edmundo Campos</td>
+                            <td>Porsche 911 II GT3 R</td>
+                            <td>115</td>
+                        </tr>
+                        <tr class="silver">
+                            <th scope="row">2</th>
+                            <td>Bryan Deschênes</td>
+                            <td>Audi R8 LMS Evo</td>
+                            <td>85</td>
+                        </tr>
+                        <tr class="bronze">
+                            <th scope="row">3</th>
+                            <td>Yannick Léger</td>
+                            <td>Nissan GT-R Nismo GT3</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Frank Lacerte</td>
+                            <td>AMR V8 Vantage</td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Nicholas Dubois Cloutier</td>
+                            <td>AMR V8 Vantage</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Jonathan Michaud</td>
+                            <td>AMR V8 Vantage</td>
+                            <td>15</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 offset-4 text-center">
+            <img src="img/logo_egt3.png" class="img-fluid px-2 py-2" width="200px" alt="egt3logo">
+            <p class="text-white">Copyright &copy; Julien Hébert 2020</p>
+            <span class="text-white"><i class="far fa-envelope"></i> <a HREF="mailto:julien@egtchallenge.ca" target="_blank">julien@egtchallenge.ca</a>
+            </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
